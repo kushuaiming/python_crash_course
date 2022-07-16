@@ -9,3 +9,8 @@ pip3 install pygame
 cd alien_invasion
 python3 alien_invasion.py
 ```
+## Data Visualization
+### Install Dependency
+```
+sudo apt install python3-matplotlib
+```
