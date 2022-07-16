@@ -26,7 +26,7 @@ def run_game():
     stats = GameStats(ai_settings)
     sb = Scoreboard(ai_settings, screen, stats)
     while True:
-        gf.check_events(ai_settings, screen, stats, play_button, ship,
+        gf.check_events(ai_settings, screen, stats, sb, play_button, ship,
             aliens, bullets)
 
         if stats.game_active:
