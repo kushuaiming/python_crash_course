@@ -1,6 +1,11 @@
 # python_crash_course
 ## Alien Invasion
-### install dependency
+### Install Dependency
 ```
 pip3 install pygame
+```
+### Run the Game
+```
+cd alien_invasion
+python3 alien_invasion.py
 ```
