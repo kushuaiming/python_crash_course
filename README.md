@@ -13,4 +13,5 @@ python3 alien_invasion.py
 ### Install Dependency
 ```
 sudo apt install python3-matplotlib
+pip3 install --user pygal
 ```
