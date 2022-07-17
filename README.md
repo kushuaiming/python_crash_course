@@ -14,4 +14,5 @@ python3 alien_invasion.py
 ```
 sudo apt install python3-matplotlib
 pip3 install --user pygal
+pip3 install pygal_maps_world
 ```
