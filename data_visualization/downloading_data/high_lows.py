@@ -14,15 +14,17 @@ with open(filename) as f:
             current_date = datetime.strptime(row[2], '%Y-%m-%d')
             high = int(row[8])
             low = int(row[9])
-        except ValueError: # there may be empty data
-            pass
-        lows.append(low)
-        highs.append(high)
-        dates.append(current_date)
+        except ValueError:
+            print(current_date, 'missing data')
+        else:
+            lows.append(low)
+            highs.append(high)
+            dates.append(current_date)
 
 fig = plt.figure(dpi=128, figsize=(10, 6))
-plt.plot(dates, highs, c='red')
-plt.plot(dates, lows, c='blue')
+plt.plot(dates, highs, c='red', alpha=0.5)
+plt.plot(dates, lows, c='blue', alpha=0.5)
+plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 plt.title('Daily high and low temperatures, 2018', fontsize=24)
 plt.xlabel('', fontsize=16)
